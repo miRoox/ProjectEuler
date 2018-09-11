@@ -3,6 +3,7 @@
 
 $templateFile="README.md.tmp"
 $outputFile="README.md"
+$remoteRoot="https://github.com/miRoox/ProjectEuler/blob/master/"
 
 
 updateREADME::notmp="Template file `1` is lost. Cannont update `2`."
@@ -14,7 +15,7 @@ If[!FileExistsQ[$templateFile],Message[updateREADME::notmp,$templateFile,$output
 markdownHyperlink[context_,href_]:=TemplateApply["[`context`](`href`)",<|"context"->context,"href"->href|>]
 
 
-fixPath[path_]:="/"<>StringReplace[path,"\\"->"/"]
+fixPath[path_]:=$remoteRoot<>StringReplace[path,"\\"->"/"]
 
 
 getTitle[dirName_]:=StringReplace[dirName,DigitCharacter..~~". "~~title__:>markdownHyperlink[title,fixPath@FileNameJoin[{dirName,"README.txt"}]]]
