@@ -7,3 +7,4 @@
 | 3 | [Largest prime factor](https://github.com/miRoox/ProjectEuler/blob/master/3.%20Largest%20prime%20factor/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/3.%20Largest%20prime%20factor/3.wl) |
 | 4 | [Largest palindrome product](https://github.com/miRoox/ProjectEuler/blob/master/4.%20Largest%20palindrome%20product/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/4.%20Largest%20palindrome%20product/4.wl) |
 | 5 | [Smallest multiple](https://github.com/miRoox/ProjectEuler/blob/master/5.%20Smallest%20multiple/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/5.%20Smallest%20multiple/5.wl) |
+| 6 | [Sum square difference](https://github.com/miRoox/ProjectEuler/blob/master/6.%20Sum%20square%20difference/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/6.%20Sum%20square%20difference/6.wl) |
