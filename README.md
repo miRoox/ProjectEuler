@@ -9,3 +9,4 @@
 | 5 | [Smallest multiple](https://github.com/miRoox/ProjectEuler/blob/master/5.%20Smallest%20multiple/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/5.%20Smallest%20multiple/5.wl) |
 | 6 | [Sum square difference](https://github.com/miRoox/ProjectEuler/blob/master/6.%20Sum%20square%20difference/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/6.%20Sum%20square%20difference/6.wl) |
 | 7 | [10001st prime](https://github.com/miRoox/ProjectEuler/blob/master/7.%2010001st%20prime/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/7.%2010001st%20prime/7.wl) |
+| 8 | [Largest product in a series](https://github.com/miRoox/ProjectEuler/blob/master/8.%20Largest%20product%20in%20a%20series/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/8.%20Largest%20product%20in%20a%20series/8.wl) |
