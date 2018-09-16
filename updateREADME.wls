@@ -18,6 +18,9 @@ markdownHyperlink[context_,href_]:=TemplateApply["[`context`](`href`)",<|"contex
 fixPath[path_]:=URLBuild[{$remoteRoot,StringReplace[path,"\\"->"/"]}]
 
 
+getId=StringReplace[(id:DigitCharacter..)~~"."~~__:>id]
+
+
 getTitle[dirName_]:=StringReplace[dirName,DigitCharacter..~~". "~~title__:>markdownHyperlink[title,fixPath@FileNameJoin[{dirName,"README.txt"}]]]
 
 
@@ -43,7 +46,7 @@ markdownTableSep[headings_,align_]:=
 
 
 actions=<|
- "ID"->StringReplace[(id:DigitCharacter..)~~"."~~__:>id],
+ "ID"->getId,
  "\:9898\:76ee"->getTitle,
  "Wolfram Language"->(solvedOrNot@First[FileNames["*.wl",#],""]&)
 |>
@@ -52,7 +55,7 @@ actions=<|
 header=Keys[actions]
 
 
-questionFolders=FileNames[]//Select[StringMatchQ[DigitCharacter..~~". "~~__]]
+questionFolders=FileNames[]//Select[StringMatchQ[DigitCharacter..~~". "~~__]]//SortBy[ToExpression@*getId]
 
 
 body=Outer[Construct,Values[actions],questionFolders]//Transpose
