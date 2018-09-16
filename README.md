@@ -14,3 +14,4 @@
 | 10 | [Summation of primes](https://github.com/miRoox/ProjectEuler/blob/master/10.%20Summation%20of%20primes/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/10.%20Summation%20of%20primes/10.wl) |
 | 11 | [Largest product in a grid](https://github.com/miRoox/ProjectEuler/blob/master/11.%20Largest%20product%20in%20a%20grid/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/11.%20Largest%20product%20in%20a%20grid/11.wl) |
 | 12 | [Highly divisible triangular number](https://github.com/miRoox/ProjectEuler/blob/master/12.%20Highly%20divisible%20triangular%20number/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/12.%20Highly%20divisible%20triangular%20number/12.wl) |
+| 13 | [Large sum](https://github.com/miRoox/ProjectEuler/blob/master/13.%20Large%20sum/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/13.%20Large%20sum/13.wl) |
