@@ -15,3 +15,4 @@
 | 11 | [Largest product in a grid](https://github.com/miRoox/ProjectEuler/blob/master/11.%20Largest%20product%20in%20a%20grid/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/11.%20Largest%20product%20in%20a%20grid/11.wl) |
 | 12 | [Highly divisible triangular number](https://github.com/miRoox/ProjectEuler/blob/master/12.%20Highly%20divisible%20triangular%20number/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/12.%20Highly%20divisible%20triangular%20number/12.wl) |
 | 13 | [Large sum](https://github.com/miRoox/ProjectEuler/blob/master/13.%20Large%20sum/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/13.%20Large%20sum/13.wl) |
+| 14 | [Longest Collatz sequence](https://github.com/miRoox/ProjectEuler/blob/master/14.%20Longest%20Collatz%20sequence/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/14.%20Longest%20Collatz%20sequence/14.wl) |
