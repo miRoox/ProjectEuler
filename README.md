@@ -12,3 +12,4 @@
 | 8 | [Largest product in a series](https://github.com/miRoox/ProjectEuler/blob/master/8.%20Largest%20product%20in%20a%20series/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/8.%20Largest%20product%20in%20a%20series/8.wl) |
 | 9 | [Special Pythagorean triplet](https://github.com/miRoox/ProjectEuler/blob/master/9.%20Special%20Pythagorean%20triplet/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/9.%20Special%20Pythagorean%20triplet/9.wl) |
 | 10 | [Summation of primes](https://github.com/miRoox/ProjectEuler/blob/master/10.%20Summation%20of%20primes/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/10.%20Summation%20of%20primes/10.wl) |
+| 11 | [Largest product in a grid](https://github.com/miRoox/ProjectEuler/blob/master/11.%20Largest%20product%20in%20a%20grid/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/11.%20Largest%20product%20in%20a%20grid/11.wl) |
