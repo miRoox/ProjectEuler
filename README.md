@@ -16,3 +16,4 @@
 | 12 | [Highly divisible triangular number](https://github.com/miRoox/ProjectEuler/blob/master/12.%20Highly%20divisible%20triangular%20number/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/12.%20Highly%20divisible%20triangular%20number/12.wl) |
 | 13 | [Large sum](https://github.com/miRoox/ProjectEuler/blob/master/13.%20Large%20sum/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/13.%20Large%20sum/13.wl) |
 | 14 | [Longest Collatz sequence](https://github.com/miRoox/ProjectEuler/blob/master/14.%20Longest%20Collatz%20sequence/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/14.%20Longest%20Collatz%20sequence/14.wl) |
+| 15 | [Lattice paths](https://github.com/miRoox/ProjectEuler/blob/master/15.%20Lattice%20paths/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/15.%20Lattice%20paths/15.wl) |
