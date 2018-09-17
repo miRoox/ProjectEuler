@@ -18,3 +18,4 @@
 | 14 | [Longest Collatz sequence](https://github.com/miRoox/ProjectEuler/blob/master/14.%20Longest%20Collatz%20sequence/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/14.%20Longest%20Collatz%20sequence/14.wl) |
 | 15 | [Lattice paths](https://github.com/miRoox/ProjectEuler/blob/master/15.%20Lattice%20paths/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/15.%20Lattice%20paths/15.wl) |
 | 16 | [Power digit sum](https://github.com/miRoox/ProjectEuler/blob/master/16.%20Power%20digit%20sum/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/16.%20Power%20digit%20sum/16.wl) |
+| 17 | [Number letter counts](https://github.com/miRoox/ProjectEuler/blob/master/17.%20Number%20letter%20counts/README.txt) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/17.%20Number%20letter%20counts/17.wl) |
