@@ -21,7 +21,7 @@ fixPath[path_]:=URLBuild[{$remoteRoot,StringReplace[path,"\\"->"/"]}]
 getId=StringReplace[(id:DigitCharacter..)~~"."~~__:>id]
 
 
-getTitle[dirName_]:=StringReplace[dirName,DigitCharacter..~~". "~~title__:>markdownHyperlink[title,fixPath@FileNameJoin[{dirName,"README.txt"}]]]
+getTitle[dirName_]:=StringReplace[dirName,DigitCharacter..~~". "~~title__:>markdownHyperlink[title,fixPath@FileNameJoin[{dirName,"README.md"}]]]
 
 
 solvedOrNot[file_?FileExistsQ]:=markdownHyperlink["Solved",fixPath@file]
