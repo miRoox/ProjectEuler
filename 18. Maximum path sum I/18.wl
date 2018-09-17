@@ -18,8 +18,4 @@ data=ImportString[
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23","Table"]
 
 
-maxPath[i_/;i<=Length[data],j_]:=data[[i,j]]+Max[maxPath[i+1,j],maxPath[i+1,j+1]]
-maxPath[_,_]=0;
-
-
-maxPath[1,1]
+Fold[Max/@Transpose@{Most[#1]+#2,Rest[#1]+#2}&,Reverse@data]//First
