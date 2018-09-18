@@ -22,3 +22,4 @@
 | 18 | [Maximum path sum I](https://github.com/miRoox/ProjectEuler/blob/master/18.%20Maximum%20path%20sum%20I/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/18.%20Maximum%20path%20sum%20I/18.wl) |
 | 19 | [Counting Sundays](https://github.com/miRoox/ProjectEuler/blob/master/19.%20Counting%20Sundays/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/19.%20Counting%20Sundays/19.wl) |
 | 20 | [Factorial digit sum](https://github.com/miRoox/ProjectEuler/blob/master/20.%20Factorial%20digit%20sum/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/20.%20Factorial%20digit%20sum/20.wl) |
+| 21 | [Amicable numbers](https://github.com/miRoox/ProjectEuler/blob/master/21.%20Amicable%20numbers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/21.%20Amicable%20numbers/21.wl) |
