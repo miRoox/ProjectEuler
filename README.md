@@ -25,3 +25,4 @@
 | 21 | [Amicable numbers](https://github.com/miRoox/ProjectEuler/blob/master/21.%20Amicable%20numbers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/21.%20Amicable%20numbers/21.wl) |
 | 22 | [Names scores](https://github.com/miRoox/ProjectEuler/blob/master/22.%20Names%20scores/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/22.%20Names%20scores/22.wl) |
 | 23 | [Non-abundant sums](https://github.com/miRoox/ProjectEuler/blob/master/23.%20Non-abundant%20sums/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/23.%20Non-abundant%20sums/23.wl) |
+| 24 | [Lexicographic permutations](https://github.com/miRoox/ProjectEuler/blob/master/24.%20Lexicographic%20permutations/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/24.%20Lexicographic%20permutations/24.wl) |
