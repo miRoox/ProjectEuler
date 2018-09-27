@@ -28,3 +28,4 @@
 | 24 | [Lexicographic permutations](https://github.com/miRoox/ProjectEuler/blob/master/24.%20Lexicographic%20permutations/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/24.%20Lexicographic%20permutations/24.wl) |
 | 25 | [1000-digit Fibonacci number](https://github.com/miRoox/ProjectEuler/blob/master/25.%201000-digit%20Fibonacci%20number/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/25.%201000-digit%20Fibonacci%20number/25.wl) |
 | 26 | [Reciprocal cycles](https://github.com/miRoox/ProjectEuler/blob/master/26.%20Reciprocal%20cycles/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/26.%20Reciprocal%20cycles/26.wl) |
+| 27 | [Quadratic primes](https://github.com/miRoox/ProjectEuler/blob/master/27.%20Quadratic%20primes/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/27.%20Quadratic%20primes/27.wl) |
