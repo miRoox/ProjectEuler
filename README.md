@@ -30,3 +30,4 @@
 | 26 | [Reciprocal cycles](https://github.com/miRoox/ProjectEuler/blob/master/26.%20Reciprocal%20cycles/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/26.%20Reciprocal%20cycles/26.wl) |
 | 27 | [Quadratic primes](https://github.com/miRoox/ProjectEuler/blob/master/27.%20Quadratic%20primes/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/27.%20Quadratic%20primes/27.wl) |
 | 28 | [Number spiral diagonals](https://github.com/miRoox/ProjectEuler/blob/master/28.%20Number%20spiral%20diagonals/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/28.%20Number%20spiral%20diagonals/28.wl) |
+| 29 | [Distinct powers](https://github.com/miRoox/ProjectEuler/blob/master/29.%20Distinct%20powers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/29.%20Distinct%20powers/29.wl) |
