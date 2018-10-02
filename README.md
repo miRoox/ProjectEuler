@@ -36,3 +36,4 @@
 | 32 | [Pandigital products](https://github.com/miRoox/ProjectEuler/blob/master/32.%20Pandigital%20products/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/32.%20Pandigital%20products/32.wl) |
 | 33 | [Digit cancelling fractions](https://github.com/miRoox/ProjectEuler/blob/master/33.%20Digit%20cancelling%20fractions/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/33.%20Digit%20cancelling%20fractions/33.wl) |
 | 34 | [Digit factorials](https://github.com/miRoox/ProjectEuler/blob/master/34.%20Digit%20factorials/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/34.%20Digit%20factorials/34.wl) |
+| 35 | [Circular primes](https://github.com/miRoox/ProjectEuler/blob/master/35.%20Circular%20primes/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/35.%20Circular%20primes/35.wl) |
