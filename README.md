@@ -32,3 +32,4 @@
 | 28 | [Number spiral diagonals](https://github.com/miRoox/ProjectEuler/blob/master/28.%20Number%20spiral%20diagonals/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/28.%20Number%20spiral%20diagonals/28.wl) |
 | 29 | [Distinct powers](https://github.com/miRoox/ProjectEuler/blob/master/29.%20Distinct%20powers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/29.%20Distinct%20powers/29.wl) |
 | 30 | [Digit fifth powers](https://github.com/miRoox/ProjectEuler/blob/master/30.%20Digit%20fifth%20powers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/30.%20Digit%20fifth%20powers/30.wl) |
+| 31 | [Coin sums](https://github.com/miRoox/ProjectEuler/blob/master/31.%20Coin%20sums/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/31.%20Coin%20sums/31.wl) |
