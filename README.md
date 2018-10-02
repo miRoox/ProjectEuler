@@ -34,3 +34,4 @@
 | 30 | [Digit fifth powers](https://github.com/miRoox/ProjectEuler/blob/master/30.%20Digit%20fifth%20powers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/30.%20Digit%20fifth%20powers/30.wl) |
 | 31 | [Coin sums](https://github.com/miRoox/ProjectEuler/blob/master/31.%20Coin%20sums/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/31.%20Coin%20sums/31.wl) |
 | 32 | [Pandigital products](https://github.com/miRoox/ProjectEuler/blob/master/32.%20Pandigital%20products/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/32.%20Pandigital%20products/32.wl) |
+| 33 | [Digit cancelling fractions](https://github.com/miRoox/ProjectEuler/blob/master/33.%20Digit%20cancelling%20fractions/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/33.%20Digit%20cancelling%20fractions/33.wl) |
