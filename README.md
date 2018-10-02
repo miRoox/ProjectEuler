@@ -33,3 +33,4 @@
 | 29 | [Distinct powers](https://github.com/miRoox/ProjectEuler/blob/master/29.%20Distinct%20powers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/29.%20Distinct%20powers/29.wl) |
 | 30 | [Digit fifth powers](https://github.com/miRoox/ProjectEuler/blob/master/30.%20Digit%20fifth%20powers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/30.%20Digit%20fifth%20powers/30.wl) |
 | 31 | [Coin sums](https://github.com/miRoox/ProjectEuler/blob/master/31.%20Coin%20sums/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/31.%20Coin%20sums/31.wl) |
+| 32 | [Pandigital products](https://github.com/miRoox/ProjectEuler/blob/master/32.%20Pandigital%20products/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/32.%20Pandigital%20products/32.wl) |
