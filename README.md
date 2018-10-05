@@ -38,3 +38,4 @@
 | 34 | [Digit factorials](https://github.com/miRoox/ProjectEuler/blob/master/34.%20Digit%20factorials/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/34.%20Digit%20factorials/34.wl) |
 | 35 | [Circular primes](https://github.com/miRoox/ProjectEuler/blob/master/35.%20Circular%20primes/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/35.%20Circular%20primes/35.wl) |
 | 36 | [Double-base palindromes](https://github.com/miRoox/ProjectEuler/blob/master/36.%20Double-base%20palindromes/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/36.%20Double-base%20palindromes/36.wl) |
+| 37 | [Truncatable primes](https://github.com/miRoox/ProjectEuler/blob/master/37.%20Truncatable%20primes/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/37.%20Truncatable%20primes/37.wl) |
