@@ -41,3 +41,4 @@
 | 37 | [Truncatable primes](https://github.com/miRoox/ProjectEuler/blob/master/37.%20Truncatable%20primes/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/37.%20Truncatable%20primes/37.wl) |
 | 38 | [Pandigital multiples](https://github.com/miRoox/ProjectEuler/blob/master/38.%20Pandigital%20multiples/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/38.%20Pandigital%20multiples/38.wl) |
 | 39 | [Integer right triangles](https://github.com/miRoox/ProjectEuler/blob/master/39.%20Integer%20right%20triangles/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/39.%20Integer%20right%20triangles/39.wl) |
+| 40 | [Champernowne's constant](https://github.com/miRoox/ProjectEuler/blob/master/40.%20Champernowne%27s%20constant/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/40.%20Champernowne%27s%20constant/40.wl) |
