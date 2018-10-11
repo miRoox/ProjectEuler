@@ -1,6 +1,10 @@
 (* ::Package:: *)
 
-data=ToExpression/@StringSplit[Import[FileNameJoin@{NotebookDirectory[],"p022_names.txt"}],","];
+fileName="p022_names.txt";
+fileName=If[$Notebooks,FileNameJoin@{NotebookDirectory[],fileName},fileName];
+
+
+data=ToExpression/@StringSplit[Import[fileName],","];
 
 
 score[char_,{index_}]:=Total@LetterNumber[char]*index
