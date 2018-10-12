@@ -44,3 +44,4 @@
 | 40 | [Champernowne's constant](https://github.com/miRoox/ProjectEuler/blob/master/40.%20Champernowne%27s%20constant/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/40.%20Champernowne%27s%20constant/40.wl) |
 | 41 | [Pandigital prime](https://github.com/miRoox/ProjectEuler/blob/master/41.%20Pandigital%20prime/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/41.%20Pandigital%20prime/41.wl) |
 | 42 | [Coded triangle numbers](https://github.com/miRoox/ProjectEuler/blob/master/42.%20Coded%20triangle%20numbers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/42.%20Coded%20triangle%20numbers/42.wl) |
+| 43 | [Sub-string divisibility](https://github.com/miRoox/ProjectEuler/blob/master/43.%20Sub-string%20divisibility/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/43.%20Sub-string%20divisibility/43.wl) |
