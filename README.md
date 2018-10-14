@@ -46,3 +46,4 @@
 | 42 | [Coded triangle numbers](https://github.com/miRoox/ProjectEuler/blob/master/42.%20Coded%20triangle%20numbers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/42.%20Coded%20triangle%20numbers/42.wl) |
 | 43 | [Sub-string divisibility](https://github.com/miRoox/ProjectEuler/blob/master/43.%20Sub-string%20divisibility/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/43.%20Sub-string%20divisibility/43.wl) |
 | 44 | [Pentagon numbers](https://github.com/miRoox/ProjectEuler/blob/master/44.%20Pentagon%20numbers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/44.%20Pentagon%20numbers/44.wl) |
+| 45 | [Triangular, pentagonal, and hexagonal](https://github.com/miRoox/ProjectEuler/blob/master/45.%20Triangular%2C%20pentagonal%2C%20and%20hexagonal/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/45.%20Triangular%2C%20pentagonal%2C%20and%20hexagonal/45.wl) |
