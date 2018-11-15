@@ -47,3 +47,4 @@
 | 43 | [Sub-string divisibility](https://github.com/miRoox/ProjectEuler/blob/master/43.%20Sub-string%20divisibility/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/43.%20Sub-string%20divisibility/43.wl) |
 | 44 | [Pentagon numbers](https://github.com/miRoox/ProjectEuler/blob/master/44.%20Pentagon%20numbers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/44.%20Pentagon%20numbers/44.wl) |
 | 45 | [Triangular, pentagonal, and hexagonal](https://github.com/miRoox/ProjectEuler/blob/master/45.%20Triangular%2C%20pentagonal%2C%20and%20hexagonal/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/45.%20Triangular%2C%20pentagonal%2C%20and%20hexagonal/45.wl) |
+| 46 | [Goldbach's other conjecture](https://github.com/miRoox/ProjectEuler/blob/master/46.%20Goldbach%27s%20other%20conjecture/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/46.%20Goldbach%27s%20other%20conjecture/46.wl) |
