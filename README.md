@@ -49,3 +49,4 @@
 | 45 | [Triangular, pentagonal, and hexagonal](https://github.com/miRoox/ProjectEuler/blob/master/45.%20Triangular%2C%20pentagonal%2C%20and%20hexagonal/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/45.%20Triangular%2C%20pentagonal%2C%20and%20hexagonal/45.wl) |
 | 46 | [Goldbach's other conjecture](https://github.com/miRoox/ProjectEuler/blob/master/46.%20Goldbach%27s%20other%20conjecture/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/46.%20Goldbach%27s%20other%20conjecture/46.wl) |
 | 47 | [Distinct primes factors](https://github.com/miRoox/ProjectEuler/blob/master/47.%20Distinct%20primes%20factors/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/47.%20Distinct%20primes%20factors/47.wl) |
+| 48 | [Self powers](https://github.com/miRoox/ProjectEuler/blob/master/48.%20Self%20powers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/48.%20Self%20powers/48.wl) |
