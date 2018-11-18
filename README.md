@@ -51,3 +51,4 @@
 | 47 | [Distinct primes factors](https://github.com/miRoox/ProjectEuler/blob/master/47.%20Distinct%20primes%20factors/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/47.%20Distinct%20primes%20factors/47.wl) |
 | 48 | [Self powers](https://github.com/miRoox/ProjectEuler/blob/master/48.%20Self%20powers/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/48.%20Self%20powers/48.wl) |
 | 49 | [Prime permutations](https://github.com/miRoox/ProjectEuler/blob/master/49.%20Prime%20permutations/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/49.%20Prime%20permutations/49.wl) |
+| 50 | [Consecutive prime sum](https://github.com/miRoox/ProjectEuler/blob/master/50.%20Consecutive%20prime%20sum/README.md) | [Solved](https://github.com/miRoox/ProjectEuler/blob/master/50.%20Consecutive%20prime%20sum/50.wl) |
