@@ -1,16 +1,35 @@
 (* ::Package:: *)
 
-(*Use Compile to solve it as quickly as possible *)
-collatzChain=Compile[{{n,_Integer}},
- Module[{i=0,m=n},
-  While[m>1,
-   If[EvenQ[m],m=Quotient[m,2],m=3m+1];++i
-  ];
-  {n,i}
- ],
- RuntimeAttributes->{Listable},
- Parallelization->True
-];
+(* compile + memoize *)
+longestCollatz=Compile[{{n,_Integer}},
+  Module[{collatz=Table[0,{n}],maxi=0,max=0},
+   Do[
+    If[collatz[[i]]==0,
+     (* evaluate every collatz chain *)
+     Module[{j=i},
+      While[j>1,
+       If[EvenQ[j],
+        j=Quotient[j,2],
+        j=3j+1
+       ];
+       If[0<j<=n && collatz[[j]]>0,
+        collatz[[i]]+=collatz[[j]];Break[], (* memoize *)
+        ++collatz[[i]];
+       ]
+      ]
+     ]
+    ];
+    (* find longest *)
+    If[collatz[[i]]>max,
+     max=collatz[[i]];
+     maxi=i;
+    ],
+    {i,n}
+   ];
+   maxi
+  ],
+  CompilationOptions->{"ExpressionOptimization" -> True}
+ ];
 
 
-collatzChain[Range[1*^6]]//MaximalBy[Last]//First//First
+longestCollatz[1*^6]
