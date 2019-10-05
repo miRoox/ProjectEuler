@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 truncatablePrimeQ[n_]:=
@@ -12,5 +13,5 @@ Module[{sum=0,count=0,p=11},
    sum += p;
   ]
  ];
- sum
+ sum//Print
 ]

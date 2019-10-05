@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 badCancelQ[n_,d_]:=
@@ -6,4 +7,4 @@ badCancelQ[n_,d_]:=
  ]//Quiet
 
 
-Do[If[badCancelQ[n,d],Sow[n/d]],{d,10,100},{n,10,d}]//Reap//Last//Last//Apply[Times]//Denominator
+Do[If[badCancelQ[n,d],Sow[n/d]],{d,10,100},{n,10,d}]//Reap//Last//Last//Apply[Times]//Denominator//Print

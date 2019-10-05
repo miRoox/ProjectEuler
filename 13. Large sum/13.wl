@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 data=ToExpression/@StringSplit[
@@ -103,4 +104,4 @@ data=ToExpression/@StringSplit[
 53503534226472524250874054075591789781264330331690"]
 
 
-FromDigits[Take[IntegerDigits[Total[data]], 10]]
+FromDigits[Take[IntegerDigits[Total[data]], 10]]//Print

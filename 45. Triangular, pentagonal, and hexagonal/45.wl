@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 For[n={285,165,143};tmp={1},Max[tmp]<=40755,n*=2,
@@ -7,4 +8,4 @@ For[n={285,165,143};tmp={1},Max[tmp]<=40755,n*=2,
   Table[k(2k-1),  {k,n[[3]]+1,2n[[3]]}]
  ]
 ]
-First@tmp
+First@tmp//Print

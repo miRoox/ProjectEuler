@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 pandigitals[n_]:=FromDigits/@Permutations@Reverse@Range[n]
@@ -9,4 +10,4 @@ findPandigitalPrime[n_:9]:=With[
  ]
 
 
-findPandigitalPrime[]
+findPandigitalPrime[]//Print

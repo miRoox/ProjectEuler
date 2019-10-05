@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 data=ImportString[
@@ -30,4 +31,4 @@ Apply[Times],
 Apply[Times]@*Diagonal,
 Apply[Times]@*Diagonal@*Reverse
 }@#]&,
-data,{4,4},{1,1}]//Max
+data,{4,4},{1,1}]//Max//Print

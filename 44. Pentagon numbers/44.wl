@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 (* ::Input:: *)
@@ -26,4 +27,4 @@ With[{
    minD
   ]
  ][]
-]
+]//Print

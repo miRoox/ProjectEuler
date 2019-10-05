@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 (* ::Input:: *)
@@ -17,4 +18,4 @@ total[n_]:=n
 triangleWordQ[str_String]:=triangleNumberQ@total@LetterNumber[str]
 
 
-Select[data,triangleWordQ]//Length
+Select[data,triangleWordQ]//Length//Print

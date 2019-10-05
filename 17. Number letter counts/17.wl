@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 oneDigits={"one","two","three","four","five","six","seven","eight","nine",
@@ -10,4 +11,4 @@ toEnglish[n_Integer/;100<=n<1000]:=oneDigits[[Quotient[n,100]]]<>" hundred"<>If[
 toEnglish[n_Integer/;1000<=n<1000000]:=toEnglish[Quotient[n,1000]]<>" thousand"<>If[Mod[n,100]!=0," "<>toEnglish[Mod[n,1000]],""]
 
 
-StringReplace[StringJoin@toEnglish@Range[1000],Except[WordCharacter]..->""]//StringLength
+StringReplace[StringJoin@toEnglish@Range[1000],Except[WordCharacter]..->""]//StringLength//Print

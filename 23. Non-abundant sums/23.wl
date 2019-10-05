@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 lim=28123;
@@ -13,4 +14,4 @@ abundantNumberQ[n-m],Return[False]
 
 
 isResult=ParallelMap[notSumOfTwoAbundantsQ,allInRange];
-Total[Pick[allInRange,isResult]]
+Total[Pick[allInRange,isResult]]//Print

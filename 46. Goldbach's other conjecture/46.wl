@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 goldbachQ[n_]:=Module[{i=1,p=2},
@@ -8,4 +9,4 @@ goldbachQ[n_]:=Module[{i=1,p=2},
 
 n=9;
 While[PrimeQ[n]||goldbachQ[n],n+=2];
-n
+n//Print

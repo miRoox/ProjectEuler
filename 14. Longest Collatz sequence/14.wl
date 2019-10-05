@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 (* compile + memoize *)
@@ -32,4 +33,4 @@ longestCollatz=Compile[{{n,_Integer}},
  ];
 
 
-longestCollatz[1*^6]
+longestCollatz[1*^6]//Print

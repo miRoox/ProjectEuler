@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 With[{lim=1*^6},
@@ -15,4 +16,4 @@ With[{lim=1*^6},
   ];
   sum
  ]
-]
+]//Print

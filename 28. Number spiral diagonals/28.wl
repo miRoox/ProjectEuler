@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 (* ::Input:: *)
@@ -16,4 +17,4 @@
 (*Sum[2 (8-14 n+8 n^2),{n,n}]-4+1//Expand*)
 
 
--3+(14 n)/3-6 n^2+(16 n^3)/3/.{n->Quotient[1001,2]+1}
+-3+(14 n)/3-6 n^2+(16 n^3)/3/.{n->Quotient[1001,2]+1}//Print

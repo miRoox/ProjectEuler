@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-LCM@@Range[20]
+LCM@@Range[20]//Print

@@ -1,6 +1,7 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 d[n_]:=d[n]=DivisorSum[n,Identity,#<n&]
 
 
-Total@Select[#==d@d[#]!=d[#]&]@Range[2,10000]
+Total@Select[#==d@d[#]!=d[#]&]@Range[2,10000]//Print

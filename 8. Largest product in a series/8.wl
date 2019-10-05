@@ -1,3 +1,4 @@
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
 raw=
@@ -24,4 +25,4 @@ raw=
 
 data=FromDigits/@Characters[StringReplace[raw,"\n"->""]];
 
-MovingMap[Apply[Times],data,13-1]//Max
+MovingMap[Apply[Times],data,13-1]//Max//Print
