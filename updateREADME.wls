@@ -48,7 +48,8 @@ markdownTableSep[headings_,align_]:=
 actions=<|
  "ID"->getId,
  "\:9898\:76ee"->getTitle,
- "Wolfram Language"->(solvedOrNot@First[FileNames["*.wl",#],""]&)
+ "Wolfram Language"->(solvedOrNot@First[FileNames["*.wl",#],""]&),
+ "Julia"->(solvedOrNot@First[FileNames["*.jl",#],""]&)
 |>
 
 
