@@ -1,0 +1,23 @@
+# Benchmark Report
+
+My Project Euler solution programs were bench­marked to see how much time it took to compute the answer.
+This information gives a rough sense of which problems are easy or hard, and how the choice of program­ming language affects the running time.
+
+Note that the benchmark does *not* attempt to be “fair” in any way.
+The time of the benchmark includes the (JIT) compile time and the start time of the interpreter.
+The algorithms between different languages are not exactly the same.
+And my solution code is not optimized for the fastest speed.
+
+All the numbers listed in the table below are in seconds, and these computing environments were used:
+
+> Windows 10 (Home Edition)
+>
+> Intel(R) Core(TM) i7-9750H CPU @ 2.60GHz, 6 cores, 12 logical processors
+>
+> NVIDA GeForce GTX 1650
+
+* Wolfram Mathematica 12.0 (64-bit)
+* Julia 1.1.1 (64-bit)
+
+`table`
+
