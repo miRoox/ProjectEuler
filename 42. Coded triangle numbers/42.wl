@@ -6,7 +6,7 @@
 
 
 fileName="p042_words.txt";
-fileName=If[$Notebooks,FileNameJoin@{NotebookDirectory[],fileName},fileName];
+fileName=FileNameJoin@{DirectoryName[$InputFileName],fileName};
 
 
 data=ToExpression/@StringSplit[Import[fileName],","];
