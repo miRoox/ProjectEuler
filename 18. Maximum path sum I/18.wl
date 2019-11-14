@@ -19,4 +19,4 @@ data=ImportString[
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23","Table"]
 
 
-Fold[Max/@Transpose@{Most[#1]+#2,Rest[#1]+#2}&,Reverse@data]//First//Print
+Fold[MapThread[Max,{Most[#1]+#2,Rest[#1]+#2}]&,Reverse@data]//First//Print
