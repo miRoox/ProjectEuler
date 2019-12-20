@@ -1,10 +1,12 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-results=ParallelTable[Length@Solve[{a^2+b^2==c^2,0<a<b<c,a+b+c==p},{a,b,c},Integers],{p,1000}];
+
+PE39[n_Integer]:=Block[{results,maxVal},
+  results=ParallelTable[Length@Solve[{a^2+b^2==c^2,0<a<b<c,a+b+c==p},{a,b,c},Integers],{p,n}];
+  maxVal=Max@results;
+  FirstPosition[results,maxVal]//First
+]
 
 
-maxVal=Max@results
-
-
-FirstPosition[results,maxVal]//First//Print
+PE39[1000]

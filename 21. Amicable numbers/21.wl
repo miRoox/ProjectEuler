@@ -1,7 +1,10 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-d[n_]:=d[n]=DivisorSum[n,Identity,#<n&]
+Clear[PE21`d]
+PE21`d[n_Integer]:=PE21`d[n]=DivisorSum[n,Identity,#<n&]
+
+PE21[n_Integer]:=Total@Select[#==PE21`d@PE21`d[#]!=PE21`d[#]&]@Range[2,n]
 
 
-Total@Select[#==d@d[#]!=d[#]&]@Range[2,10000]//Print
+PE21[10000]

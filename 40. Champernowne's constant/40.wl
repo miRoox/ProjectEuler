@@ -1,11 +1,11 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-nmax=1000000;
-upto=Ceiling[nmax/(Log10[nmax]-1)]
+PE40[nmax_Integer]:=Block[{upto,d},
+  upto=Ceiling[nmax/(Log10[nmax]-1)];
+  d=StringJoin[ToString/@Range[upto]]~StringPart~PowerRange[nmax];
+  Times@@FromDigits/@d
+]
 
 
-d=StringJoin[ToString/@Range[upto]]~StringPart~PowerRange[nmax]
-
-
-Times@@FromDigits/@d//Print
+PE40[1000000]

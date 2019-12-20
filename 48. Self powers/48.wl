@@ -1,4 +1,7 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-IntegerDigits[Sum[i^i,{i,1000}]][[-10;;]]//FromDigits//Print
+PE48[]:=IntegerDigits[Sum[i^i,{i,1000}]][[-10;;]]//FromDigits
+
+
+PE48[]

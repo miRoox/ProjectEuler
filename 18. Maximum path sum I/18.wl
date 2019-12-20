@@ -1,7 +1,9 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-data=ImportString[
+PE18[data:{{__Integer}..}]:=Fold[MapThread[Max,{Most[#1]+#2,Rest[#1]+#2}]&,Reverse@data]//First
+
+PE18@ImportString[
 "75
 95 64
 17 47 82
@@ -17,6 +19,3 @@ data=ImportString[
 91 71 52 38 17 14 91 43 58 50 27 29 48
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23","Table"]
-
-
-Fold[MapThread[Max,{Most[#1]+#2,Rest[#1]+#2}]&,Reverse@data]//First//Print

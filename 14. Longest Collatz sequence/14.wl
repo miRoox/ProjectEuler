@@ -1,9 +1,9 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
 (* compile + memoize *)
-longestCollatz=Compile[{{n,_Integer}},
-  Module[{collatz=Table[0,{n}],maxi=0,max=0},
+PE14=Once@FunctionCompile@Function[{Typed[n,"Integer64"]},
+  Module[{collatz=ConstantArray[0,n],maxi=0,max=0},
    Do[
     If[collatz[[i]]==0,
      (* evaluate every collatz chain *)
@@ -14,7 +14,7 @@ longestCollatz=Compile[{{n,_Integer}},
         j=3j+1
        ];
        If[0<j<=n && collatz[[j]]>0,
-        collatz[[i]]+=collatz[[j]];Break[], (* memoize *)
+        collatz[[i]]+=collatz[[j]];j=0;, (* memoize *)
         ++collatz[[i]];
        ]
       ]
@@ -28,9 +28,8 @@ longestCollatz=Compile[{{n,_Integer}},
     {i,n}
    ];
    maxi
-  ],
-  CompilationOptions->{"ExpressionOptimization" -> True}
- ];
+  ]
+];
 
 
-longestCollatz[1*^6]//Print
+PE14[1*^6]

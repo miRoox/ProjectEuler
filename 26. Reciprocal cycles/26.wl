@@ -1,5 +1,6 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-MapIndexed[{Length@Last@First@RealDigits[#1],First[#2]}&][1/Range[1000]]//MaximalBy[First]//Last//Last//Print
+PE26[n_Integer]:=MapIndexed[{Length@Last@First@RealDigits[#1],First[#2]}&][1/Range[n]]//MaximalBy[First]//Last//Last
 
+PE26[1000]

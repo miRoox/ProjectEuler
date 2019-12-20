@@ -1,10 +1,14 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-f[n_]=Sum[i,{i,n}]
-
-
-Module[{i=1},
- While[DivisorSigma[0,f[i]]<=500,++i];
- f[i]//Print
+Once[
+Unevaluated[
+  PE12[n_Integer]:=Module[{i=1},
+    While[DivisorSigma[0,f[i]]<=n,++i];
+    f[i]
+  ]
+]/.f[n_]->Sum[i,{i,n}]
 ]
+
+
+PE12[500]

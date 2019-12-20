@@ -1,9 +1,12 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-basePalindromeQ[n_Integer,b_Integer]:=IntegerReverse[n,b]==n
-basePalindromeQ[b_Integer][n_Integer]:=basePalindromeQ[n,b]
-basePalindromeQ[b_List][n_Integer]:=And@@Thread@basePalindromeQ[n,b]
+PE36`basePalindromeQ[n_Integer,b_Integer]:=IntegerReverse[n,b]==n
+PE36`basePalindromeQ[b_Integer][n_Integer]:=PE36`basePalindromeQ[n,b]
+PE36`basePalindromeQ[b_List][n_Integer]:=And@@Thread@PE36`basePalindromeQ[n,b]
 
 
-Parallelize[Select[Range[1*^6],basePalindromeQ[{2,10}]]]//Total//Print
+PE36[n_Integer,b:{_Integer,_Integer}]:=Parallelize[Select[Range[n],PE36`basePalindromeQ[b]]]//Total
+
+
+PE36[1*^6,{2,10}]

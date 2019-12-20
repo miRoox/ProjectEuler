@@ -1,4 +1,6 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-Prime[10001]//Print
+PE7=Prime
+
+PE7[10001]

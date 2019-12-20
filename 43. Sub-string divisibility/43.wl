@@ -1,8 +1,11 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-divs=Array[Prime,7];
-subDivQ[n_List]:=Inner[Divisible,FromDigits/@Partition[n,3,1][[2;;]],divs,And]
+Once@With[{divs=Array[Prime,7]},
+  PE43`subDivQ[n_List]:=Inner[Divisible,FromDigits/@Partition[n,3,1][[2;;]],divs,And]
+]
+
+PE43[]:=FromDigits/@Select[Permutations@Range[0,9],PE43`subDivQ]//Total
 
 
-FromDigits/@Select[Permutations@Range[0,9],subDivQ]//Total//Print
+PE43[]

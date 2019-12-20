@@ -1,13 +1,13 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-sol=RSolve[{f[n]==f[n-1]+f[n-2],f[1]==1,f[2]==2},f[n],n]
+Once@With[{sol=First@RSolve[{f[n]==f[n-1]+f[n-2],f[1]==1,f[2]==2},f[n],n]/.f[n]->f[n_]},
+  Unevaluated[
+    PE2[m_Integer]:=Block[{i=1},
+      While[f[i]<m,++i];
+      Table[f[n],{n,i-1}]//Select[EvenQ]//Total
+    ]
+  ]/.sol
+]
 
-
-fn[n_]=f[n]/.sol[[1]]
-
-
-n=Module[{i=1},While[fn[i]<4*^6,++i];i-1]
-
-
-Array[fn,n]//Select[EvenQ]//Total//Print
+PE2[4*^6]

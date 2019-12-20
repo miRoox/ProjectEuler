@@ -1,5 +1,7 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
 (*just solve it!*)
-FrobeniusSolve[{1,2,5,10,20,50,100,200},200]//Length//Print
+PE31[n_Integer]:=FrobeniusSolve[{1,2,5,10,20,50,100,200},n]//Length
+
+PE31[200]

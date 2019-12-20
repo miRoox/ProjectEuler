@@ -1,4 +1,6 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-IntegerDigits[100!]//Total//Print
+PE20=IntegerDigits/*Total
+
+PE20[100!]

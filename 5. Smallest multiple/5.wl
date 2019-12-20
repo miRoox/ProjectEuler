@@ -1,4 +1,6 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-LCM@@Range[20]//Print
+PE5=Apply[LCM]@*Range
+
+PE5[20]

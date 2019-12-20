@@ -1,4 +1,6 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-FactorInteger[600851475143][[;;,1]]//Max//Print
+PE3[n_Integer]:=FactorInteger[n][[;;,1]]//Max
+
+PE3[600851475143]

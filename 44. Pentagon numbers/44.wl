@@ -1,4 +1,4 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
 (* ::Input:: *)
@@ -6,7 +6,7 @@
 
 
 (* "Compile" for speed *)
-With[{
+PE44=Once@With[{
  penta=Compile[{{n,_Integer}},Quotient[n(3n-1),2]],
  pentaQ=Compile[{{p,_Integer}},p>0&&FractionalPart[(1+Sqrt[1+24p])/6]==0.]},
  Compile[{},
@@ -26,5 +26,8 @@ With[{
    ];
    minD
   ]
- ][]
-]//Print
+ ]
+]
+
+
+PE44[]

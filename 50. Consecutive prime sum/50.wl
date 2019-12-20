@@ -1,19 +1,20 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-With[{lim=1*^6},
- Module[{len=0,sum=0},
+PE50[lim_Integer]:=Module[{len=0,sum=0},
   Do[
-   Block[{j=i,s=0},
-    While[(s+=Prime[j++])<lim,
-     If[PrimeQ[s]&&j-i>len,
-      len=j-i;
-      sum=s;
-     ]
-    ]
-   ],
-   {i,PrimePi[lim]}
+    Block[{j=i,s=0},
+      While[(s+=Prime[j++])<lim,
+        If[PrimeQ[s]&&j-i>len,
+        len=j-i;
+        sum=s;
+        ]
+      ]
+    ],
+    {i,PrimePi[lim]}
   ];
   sum
- ]
-]//Print
+]
+
+
+PE50[1*^6]

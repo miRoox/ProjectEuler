@@ -1,5 +1,7 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
 (*result of Permutations is under lexicographic order*)
-Permutations[Range[0,9]][[1*^6]]//FromDigits//Print
+PE24[]:=Permutations[Range[0,9]][[1*^6]]//FromDigits
+
+PE24[]

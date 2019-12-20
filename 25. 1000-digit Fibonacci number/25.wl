@@ -1,4 +1,6 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-NestWhile[#+1&,1,IntegerLength@Fibonacci[#]<1000&]//Print
+PE25[n_Integer]:=NestWhile[#+1&,1,IntegerLength@Fibonacci[#]<n&]
+
+PE25[1000]

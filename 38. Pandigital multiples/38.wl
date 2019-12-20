@@ -1,12 +1,16 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-pandigits=ConstantArray[1,9]~Append~0;
-pandigitalQ[n_]:=DigitCount[n]==pandigits
+Once@With[{pandigits=ConstantArray[1,9]~Append~0},
+  PE38`pandigitalQ[n_]:=DigitCount[n]==pandigits
+]
 
 
-Parallelize@Select[
- Flatten@Table[
-  FromDigits@Flatten@Table[IntegerDigits[i*k],{k,1,n}],
- {n,2,9},{i,1,10^Quotient[9,n]-1}],
-pandigitalQ]//Max//Print
+PE38[]:=Parallelize@Select[
+  Flatten@Table[
+    FromDigits@Flatten@Table[IntegerDigits[i*k],{k,1,n}],
+  {n,2,9},{i,1,10^Quotient[9,n]-1}],
+  PE38`pandigitalQ]//Max
+
+
+PE38[]

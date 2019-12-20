@@ -1,4 +1,6 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-With[{n=20},Binomial[2n,n]]//Print
+PE15[n_Integer]:=Binomial[2n,n]
+
+PE15[20]

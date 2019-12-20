@@ -1,8 +1,9 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-n=5;
-maxDigit=NestWhile[#+1&,2,IntegerLength@Total[IntegerDigits[10^#-1]^n]>#&]
+PE30[n_Integer]:=Block[{
+  maxDigit=NestWhile[#+1&,2,IntegerLength@Total[IntegerDigits[10^#-1]^n]>#&]},
+  Range[2,10^maxDigit-1]//Select[Total[IntegerDigits[#]^n]==#&]//Total
+]
 
-
-Range[2,10^maxDigit-1]//Select[Total[IntegerDigits[#]^n]==#&]//Total//Print
+PE30[5]

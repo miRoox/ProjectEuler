@@ -1,4 +1,6 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-Sum[i,{i,n}]^2-Sum[i^2,{i,n}]/.{n->100}//Print
+PE6[n_Integer]=Once[Sum[i,{i,n}]^2-Sum[i^2,{i,n}] //Simplify]
+
+PE6[100]

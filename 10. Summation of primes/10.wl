@@ -1,4 +1,6 @@
-#!/usr/bin/env wolframscript
+#!/usr/bin/env -S wolframscript -print
 (* ::Package:: *)
 
-Sum[Prime[i],{i,PrimePi[2*^6]}]//Print
+PE10[n_Integer]:=Sum[Prime[i],{i,PrimePi[n]}]
+
+PE10[2*^6]
