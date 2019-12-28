@@ -1,6 +1,19 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE26[n_Integer]:=MapIndexed[{Length@Last@First@RealDigits[#1],First[#2]}&][1/Range[n]]//MaximalBy[First]//Last//Last
+BeginPackage["ProjectEuler`"]
 
-PE26[1000]
+PE26
+
+Begin["`PE26`"]
+
+PE26[n_Integer:1000]:=MapIndexed[{Length@Last@First@RealDigits[#1],First[#2]}&][1/Range[n]]//MaximalBy[First]//Last//Last
+
+End[]
+
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE26[]//Print
+]

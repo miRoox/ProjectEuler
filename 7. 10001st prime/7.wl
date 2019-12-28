@@ -1,6 +1,13 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE7=Prime
+BeginPackage["ProjectEuler`"]
 
-PE7[10001]
+PE7[]:=Prime[10001]
+
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE7[]//Print
+]

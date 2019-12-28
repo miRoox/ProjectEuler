@@ -1,6 +1,19 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE10[n_Integer]:=Sum[Prime[i],{i,PrimePi[n]}]
+BeginPackage["ProjectEuler`"]
 
-PE10[2*^6]
+PE10
+
+Begin["`PE10`"]
+
+PE10[n_Integer:2*^6]:=Sum[Prime[i],{i,PrimePi[n]}]
+
+End[]
+
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE10[]//Print
+]

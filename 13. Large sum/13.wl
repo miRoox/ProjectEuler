@@ -1,9 +1,13 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE13[data:{__Integer}]:=FromDigits[Take[IntegerDigits[Total[data]], 10]]
+BeginPackage["ProjectEuler`"]
 
-PE13@{
+PE13
+
+Begin["`PE13`"]
+
+data={
 37107287533902102798797998220837590246510135740250,
 46376937677490009712648124896970078050417018260538,
 74324986199524741059474233309513058123726617309629,
@@ -104,3 +108,14 @@ PE13@{
 72107838435069186155435662884062257473692284509516,
 20849603980134001723930671666823555245252804609722,
 53503534226472524250874054075591789781264330331690}
+
+PE13[data:{__Integer}:data]:=FromDigits[Take[IntegerDigits[Total[data]], 10]]
+
+End[]
+
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE13[]//Print
+]

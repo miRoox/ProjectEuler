@@ -1,7 +1,13 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE50[lim_Integer]:=Module[{len=0,sum=0},
+BeginPackage["ProjectEuler`"]
+
+PE50
+
+Begin["`PE50`"]
+
+PE50[lim_Integer:1*^6]:=Module[{len=0,sum=0},
   Do[
     Block[{j=i,s=0},
       While[(s+=Prime[j++])<lim,
@@ -16,5 +22,11 @@ PE50[lim_Integer]:=Module[{len=0,sum=0},
   sum
 ]
 
+End[]
 
-PE50[1*^6]
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE50[]//Print
+]

@@ -1,10 +1,21 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-Clear[PE21`d]
-PE21`d[n_Integer]:=PE21`d[n]=DivisorSum[n,Identity,#<n&]
+BeginPackage["ProjectEuler`"]
 
-PE21[n_Integer]:=Total@Select[#==PE21`d@PE21`d[#]!=PE21`d[#]&]@Range[2,n]
+PE21
+
+Begin["`PE21`"]
+
+d[n_Integer]:=d[n]=DivisorSum[n,Identity,#<n&]
+
+PE21[n_Integer:10000]:=Total@Select[#==d@d[#]!=d[#]&]@Range[2,n]
+
+End[]
+
+EndPackage[]
 
 
-PE21[10000]
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE21[]//Print
+]

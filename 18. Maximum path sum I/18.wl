@@ -1,9 +1,13 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE18[data:{{__Integer}..}]:=Fold[MapThread[Max,{Most[#1]+#2,Rest[#1]+#2}]&,Reverse@data]//First
+BeginPackage["ProjectEuler`"]
 
-PE18@ImportString[
+PE18
+
+Begin["`PE18`"]
+
+data=ImportString[
 "75
 95 64
 17 47 82
@@ -19,3 +23,14 @@ PE18@ImportString[
 91 71 52 38 17 14 91 43 58 50 27 29 48
 63 66 04 68 89 53 67 30 73 16 69 87 40 31
 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23","Table"]
+
+PE18[data:{{__Integer}..}:data]:=Fold[MapThread[Max,{Most[#1]+#2,Rest[#1]+#2}]&,Reverse@data]//First
+
+End[]
+
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE18[]//Print
+]

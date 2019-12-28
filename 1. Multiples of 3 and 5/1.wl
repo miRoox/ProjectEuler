@@ -1,6 +1,19 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE1[n_Integer]:=Union[Range[3,n-1,3],Range[5,n-1,5]]//Total
+BeginPackage["ProjectEuler`"]
 
-PE1[1000]
+PE1
+
+Begin["`PE1`"]
+
+PE1[n_Integer:1000]:=Union[Range[3,n-1,3],Range[5,n-1,5]]//Total
+
+End[]
+
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE1[]//Print
+]

@@ -1,23 +1,34 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
+
+BeginPackage["ProjectEuler`"]
+
+PE42
+
+Begin["`PE42`"]
+
 
 (* ::Input:: *)
 (*Solve[{t>n>0,t==n (n+1)/2},n]*)
 
 
-PE42`importData[]:=Once@Block[{fileName="p042_words.txt"},
+data=Block[{fileName="p042_words.txt"},
   fileName=FileNameJoin@{DirectoryName[$InputFileName],fileName};
   ToExpression/@StringSplit[Import[fileName],","]
 ]
 
+triangleNumberQ[n_]:=IntegerQ[(Sqrt[1+8n]-1)/2]
+total[list_List]:=Total[list]
+total[n_]:=n
+triangleWordQ[str_String]:=triangleNumberQ@total@LetterNumber[str]
 
-PE42`triangleNumberQ[n_]:=IntegerQ[(Sqrt[1+8n]-1)/2]
-PE42`total[list_List]:=Total[list]
-PE42`total[n_]:=n
-PE42`triangleWordQ[str_String]:=PE42`triangleNumberQ@PE42`total@LetterNumber[str]
+PE42[data_List:data]:=Select[data,triangleWordQ]//Length
+
+End[]
+
+EndPackage[]
 
 
-PE42[data_List]:=Select[data,PE42`triangleWordQ]//Length
-
-
-PE42[PE42`importData[]]
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE42[]//Print
+]

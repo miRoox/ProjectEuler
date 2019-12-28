@@ -1,12 +1,19 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
+
+BeginPackage["ProjectEuler`"]
+
+PE44
+
+Begin["`PE44`"]
+
 
 (* ::Input:: *)
 (*Solve[{p==n (3n-1)/2,0<n<=p},n]*)
 
 
 (* "Compile" for speed *)
-PE44=Once@With[{
+PE44=With[{
  penta=Compile[{{n,_Integer}},Quotient[n(3n-1),2]],
  pentaQ=Compile[{{p,_Integer}},p>0&&FractionalPart[(1+Sqrt[1+24p])/6]==0.]},
  Compile[{},
@@ -29,5 +36,11 @@ PE44=Once@With[{
  ]
 ]
 
+End[]
 
-PE44[]
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE44[]//Print
+]

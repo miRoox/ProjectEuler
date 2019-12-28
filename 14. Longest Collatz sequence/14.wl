@@ -1,8 +1,14 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
+BeginPackage["ProjectEuler`"]
+
+PE14
+
+Begin["`PE14`"]
+
 (* compile + memoize *)
-PE14=Once@FunctionCompile@Function[{Typed[n,"Integer64"]},
+impl=FunctionCompile@Function[{Typed[n,"Integer64"]},
   Module[{collatz=ConstantArray[0,n],maxi=0,max=0},
    Do[
     If[collatz[[i]]==0,
@@ -31,5 +37,13 @@ PE14=Once@FunctionCompile@Function[{Typed[n,"Integer64"]},
   ]
 ];
 
+PE14[]:=impl[1*^6]
 
-PE14[1*^6]
+End[]
+
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE14[]//Print
+]

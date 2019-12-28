@@ -1,15 +1,27 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE22`importData[]:=Once@Block[{fileName="p022_names.txt"},
+BeginPackage["ProjectEuler`"]
+
+PE22
+
+Begin["`PE22`"]
+
+data=Block[{fileName="p022_names.txt"},
   fileName=FileNameJoin@{DirectoryName[$InputFileName],fileName};
   ToExpression/@StringSplit[Import[fileName],","]
 ]
 
-PE22`score[char_,{index_}]:=Total@LetterNumber[char]*index
+score[char_,{index_}]:=Total@LetterNumber[char]*index
 
 (*Parallelize to speed up*)
-PE22[data:{__String}]:=Total@Parallelize[MapIndexed[PE22`score,Sort[data]]]
+PE22[data:{__String}:data]:=Total@Parallelize[MapIndexed[score,Sort[data]]]
+
+End[]
+
+EndPackage[]
 
 
-PE22[PE22`importData[]]
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE22[]//Print
+]

@@ -1,6 +1,21 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE20=IntegerDigits/*Total
+BeginPackage["ProjectEuler`"]
 
-PE20[100!]
+PE20
+
+Begin["`PE20`"]
+
+impl=IntegerDigits/*Total
+
+PE20[]:=impl[100!]
+
+End[]
+
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE20[]//Print
+]

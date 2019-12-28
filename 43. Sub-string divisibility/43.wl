@@ -1,11 +1,23 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-Once@With[{divs=Array[Prime,7]},
-  PE43`subDivQ[n_List]:=Inner[Divisible,FromDigits/@Partition[n,3,1][[2;;]],divs,And]
+BeginPackage["ProjectEuler`"]
+
+PE43
+
+Begin["`PE43`"]
+
+With[{divs=Array[Prime,7]},
+  subDivQ[n_List]:=Inner[Divisible,FromDigits/@Partition[n,3,1][[2;;]],divs,And]
 ]
 
-PE43[]:=FromDigits/@Select[Permutations@Range[0,9],PE43`subDivQ]//Total
+PE43[]:=FromDigits/@Select[Permutations@Range[0,9],subDivQ]//Total
+
+End[]
+
+EndPackage[]
 
 
-PE43[]
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE43[]//Print
+]

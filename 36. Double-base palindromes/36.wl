@@ -1,12 +1,24 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE36`basePalindromeQ[n_Integer,b_Integer]:=IntegerReverse[n,b]==n
-PE36`basePalindromeQ[b_Integer][n_Integer]:=PE36`basePalindromeQ[n,b]
-PE36`basePalindromeQ[b_List][n_Integer]:=And@@Thread@PE36`basePalindromeQ[n,b]
+BeginPackage["ProjectEuler`"]
+
+PE36
+
+Begin["`PE36`"]
+
+basePalindromeQ[n_Integer,b_Integer]:=IntegerReverse[n,b]==n
+basePalindromeQ[b_Integer][n_Integer]:=basePalindromeQ[n,b]
+basePalindromeQ[b_List][n_Integer]:=And@@Thread@basePalindromeQ[n,b]
+
+PE36[n_Integer:1*^6,b:{_Integer,_Integer}:{2,10}]:=
+  Parallelize[Select[Range[n],basePalindromeQ[b]],DistributedContexts->Automatic]//Total
+
+End[]
+
+EndPackage[]
 
 
-PE36[n_Integer,b:{_Integer,_Integer}]:=Parallelize[Select[Range[n],PE36`basePalindromeQ[b]]]//Total
-
-
-PE36[1*^6,{2,10}]
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE36[]//Print
+]

@@ -1,13 +1,24 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE41`pandigitals[n_]:=FromDigits/@Permutations@Reverse@Range[n]
+BeginPackage["ProjectEuler`"]
 
+PE41
+
+Begin["`PE41`"]
+
+pandigitals[n_]:=FromDigits/@Permutations@Reverse@Range[n]
 
 PE41[n_:9]:=With[
-  {result=SelectFirst[PE41`pandigitals[n],PrimeQ,None]},
+  {result=SelectFirst[pandigitals[n],PrimeQ,None]},
   If[result===None,PE41[n-1],result]
  ]
 
+End[]
 
-PE41[]
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE41[]//Print
+]

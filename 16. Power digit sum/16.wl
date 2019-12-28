@@ -1,6 +1,21 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE16=IntegerDigits/*Total
+BeginPackage["ProjectEuler`"]
 
-PE16[2^1000]
+PE16
+
+Begin["`PE16`"]
+
+impl=IntegerDigits/*Total
+
+PE16[]:=impl[2^1000]
+
+End[]
+
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE16[]//Print
+]

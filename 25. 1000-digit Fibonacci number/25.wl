@@ -1,6 +1,19 @@
-#!/usr/bin/env -S wolframscript -print
+#!/usr/bin/env wolframscript
 (* ::Package:: *)
 
-PE25[n_Integer]:=NestWhile[#+1&,1,IntegerLength@Fibonacci[#]<n&]
+BeginPackage["ProjectEuler`"]
 
-PE25[1000]
+PE25
+
+Begin["`PE25`"]
+
+PE25[n_Integer:1000]:=NestWhile[#+1&,1,IntegerLength@Fibonacci[#]<n&]
+
+End[]
+
+EndPackage[]
+
+
+If[!TrueQ@$ProjectEulerWithoutResult,
+  PE25[]//Print
+]
