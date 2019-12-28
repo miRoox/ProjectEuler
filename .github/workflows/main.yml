@@ -1,0 +1,19 @@
+name: Test Action
+on:
+  push:
+    paths-ignore:
+    - README.md
+    - LICENSE
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Run tests
+      uses: miRoox/wolfram-action@master
+      with:
+        file: Wolfram/test.wls
+      env:
+        WOLFRAM_ID: ${{ secrets.WolframID }}
+        WOLFRAM_PASS: ${{ secrets.WolframPW }}
