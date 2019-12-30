@@ -1,3 +1,9 @@
 #!/usr/bin/env julia
 
-binomial(40,20)|>print
+export pe15
+
+pe15(n::Integer=20)=binomial(2n,n)
+
+if !haskey(ENV,"PROJECT_EULER_WITHOUT_RESULT")
+    pe15()|>print
+end

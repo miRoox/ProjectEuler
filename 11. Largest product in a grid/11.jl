@@ -1,5 +1,7 @@
 #!/usr/bin/env julia
 
+module PE11
+
 using DelimitedFiles
 
 const buffer=IOBuffer(
@@ -26,7 +28,16 @@ const buffer=IOBuffer(
 );
 const data=readdlm(buffer,' ',Int);
 
-const n=4;
-productline(dx::Int,dy::Int)=[prod(data[y+i*dy,x+i*dx] for i in 0:n-1) for y in 1:size(data,1), x in 1:size(data,2) if checkbounds(Bool,data,y+(n-1)*dy,x+(n-1)*dx)]
+end
 
-cat(productline(1,0),productline(0,1),productline(1,1),productline(1,-1),dims=1)|>maximum|>print
+export pe11
+
+function pe11(data::Matrix{<:Integer}=PE11.data)
+    n=4
+    productline(dx::Int,dy::Int)=[prod(data[y+i*dy,x+i*dx] for i in 0:n-1) for y in 1:size(data,1), x in 1:size(data,2) if checkbounds(Bool,data,y+(n-1)*dy,x+(n-1)*dx)]
+    cat(productline(1,0),productline(0,1),productline(1,1),productline(1,-1),dims=1)|>maximum
+end
+
+if !haskey(ENV,"PROJECT_EULER_WITHOUT_RESULT")
+    pe11()|>print
+end

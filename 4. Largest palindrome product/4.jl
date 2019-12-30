@@ -1,9 +1,12 @@
 #!/usr/bin/env julia
 
-ispalindrome(n)=digits(n)==reverse(digits(n))
+export pe4
 
-flatten(array)=collect(Iterators.flatten(array))
+function pe4(st::Integer=100,ed::Integer=999)
+    ispalindrome(n)=digits(n)==reverse(digits(n))
+    maximum(i*j for i in st:ed, j in st:ed if ispalindrome(i*j))
+end
 
-let st=100, ed=999
-    Vector(st:ed).*Vector(st:ed)' |> flatten |> (x->filter(ispalindrome,x)) |> maximum |> print
+if !haskey(ENV,"PROJECT_EULER_WITHOUT_RESULT")
+    pe4()|>print
 end

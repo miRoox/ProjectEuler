@@ -1,5 +1,7 @@
 #!/usr/bin/env julia
 
+module PE18
+
 const str=
 "75
 95 64
@@ -21,6 +23,16 @@ const data = map(split(str,"\n")) do line
     parse.(Int,split(line," "))
 end
 
-foldr(data) do next, prev
-    map(max,prev[1:end-1].+next,prev[2:end].+next)
-end |> first |> print
+end
+
+export pe18
+
+function pe18(data=PE18.data)
+    foldr(data) do next, prev
+        map(max,prev[1:end-1].+next,prev[2:end].+next)
+    end |> first
+end
+
+if !haskey(ENV,"PROJECT_EULER_WITHOUT_RESULT")
+    pe18()|>print
+end

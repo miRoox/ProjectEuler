@@ -1,5 +1,7 @@
 #!/usr/bin/env julia
 
+module PE12
+
 trig(n::Int)=n*(n+1)÷2
 
 function divisorlength(n::Int)
@@ -16,11 +18,18 @@ function divisorlength(n::Int)
     s
 end
 
-begin
-    local n=1
-    while divisorlength(trig(n))≤500
-        n+=1
-    end
-    trig(n)|>print
 end
 
+export pe12
+
+function pe12()
+    local n=1
+    while PE12.divisorlength(PE12.trig(n))≤500
+        n+=1
+    end
+    PE12.trig(n)
+end
+
+if !haskey(ENV,"PROJECT_EULER_WITHOUT_RESULT")
+    pe12()|>print
+end
