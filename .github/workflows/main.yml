@@ -32,3 +32,16 @@ jobs:
         julia --project=@. -e 'using Pkg
           Pkg.build()
           Pkg.test()'
+  benchmark:
+    name: Benchmark
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v1
+    - name: Wolfram language Benchmark
+      uses: miRoox/wolfram-action@master
+      with:
+        file: benchmark/benchmark.wls
+      env:
+        WOLFRAM_ID: ${{ secrets.WolframID }}
+        WOLFRAM_PASS: ${{ secrets.WolframPW }}
