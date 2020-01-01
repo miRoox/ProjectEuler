@@ -51,4 +51,7 @@ jobs:
       with:
         version: 1.1
     - name: Julia Benchmark
-      run: julia --project=@. -- benchmark/benchmark.jl
+      run: |
+        julia --project=@. -e 'using Pkg
+          Pkg.instantiate()
+          evalfile("benchmark/benchmark.jl")'
