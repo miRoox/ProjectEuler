@@ -34,6 +34,7 @@ jobs:
           Pkg.test()'
   benchmark:
     name: Benchmark
+    needs: [test_wolfram, test_julia]
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
