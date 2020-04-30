@@ -11,7 +11,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Run tests
-      uses: miRoox/wolfram-action@v1.0.0
+      uses: miRoox/wolfram-action@latest
       with:
         file: test/test.wls
       env:
@@ -40,7 +40,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v1
     - name: Wolfram language Benchmark
-      uses: miRoox/wolfram-action@v1.0.0
+      uses: miRoox/wolfram-action@latest
       with:
         file: benchmark/benchmark.wls
       env:
