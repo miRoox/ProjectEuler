@@ -17,24 +17,14 @@ Block[{$ProjectEulerWithoutResult=True},
   Get/@FileNames["*.wl", DirectoryName[$InputFileName,2], {2}]
 ]
 
-Module[{report, time, results, failIdx},
-  report=TestReport[
-    FileNameJoin[{DirectoryName[$InputFileName], "tests.wlt"}]
-  ];
-  time=report["TimeElapsed"];
-  results=report["TestResults"];
-  failIdx=report["TestsFailedIndices"];
-  Print["  ", Length[results], " tests run in ", TextString@time, "."];
-  If[TrueQ@report["AllTestsSucceeded"]
-    ,
-    Print["  All tests succeeded!"];
-    Exit[]
-    ,
-    Print["  ", Length[failIdx], " tests failed!"];
-    Do[
-      Print@TextString@Row[Values@results[i][{"TestID", "Outcome", "ActualMessages", "ActualOutput"}], " | "],
-      {i, failIdx}
-    ];
-    Exit[1]
-  ]
+Needs["MUnit`"]
+Get["https://raw.githubusercontent.com/miRoox/CILogger-MUnit/master/CILogger/CILogger.wl"]
+
+If[
+  MUnit`TestRun[
+    FileNameJoin@{DirectoryName[$InputFileName], "tests.wlt"},
+    "Loggers" :> {CILogger`CILogger[]}
+  ],
+  Exit[],
+  Exit[1]
 ]
